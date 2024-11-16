@@ -1,0 +1,313 @@
+/* Common style start */
+@import url('https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&display=swap');
+
+:root {
+    --themePurple: #6c5ce7;
+    --twilightBlue: #a2d2ff;
+    --white: #ffffff;
+}
+
+button,
+body {
+    font-family: "Stardos Stencil", system-ui, sans-serif;
+    background-color: #090a0f;
+    color: var(--white);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fullContainer {
+    width: 100%;
+}
+
+.container {
+    width: 1140px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Common style end */
+
+/* Home Style Start */
+header {
+    width: 100%;
+    background: radial-gradient(circle at 20% 50%, #1b2735, #090a0f);
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    transition: top 0.3s ease-in-out;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.transparenttextures.com/patterns/stardust.png');
+    opacity: 0.3;
+    z-index: 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+header .container .logo {
+    padding: 10px 20px;
+}
+
+header .container .logo img {
+    background-color: rgba(27, 39, 53, 0.8);
+    padding: 5px;
+    max-height: 80px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    display: inline-block;
+    height: 75px;
+    line-height: 75px;
+    padding: 0 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: var(--twilightBlue);
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+    transition: text-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: var(--themePurple);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1);
+}
+
+/* Home Style End */
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    background-image: url('https://scitechdaily.com/images/Light-Pollution-Impact-scaled.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    position: relative;
+    padding-top: 100px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* Hero Text Styles */
+.hero-text {
+    text-align: center;
+    z-index: 3;
+    color: white;
+}
+
+.hero-text a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.hero-text span {
+    font-size: 24px;
+    color: var(--themePurple);
+}
+
+/* Content Sections */
+.about-section,
+.effects-section,
+.statistics-section,
+.resources-section {
+    padding: 120px 0;
+}
+
+.about-section {
+    background: linear-gradient(to bottom, rgba(108, 92, 231, 0.5), rgba(162, 210, 255, 0.5));
+}
+
+.effects-section {
+    background: linear-gradient(to bottom, rgba(162, 210, 255, 0.2), rgba(108, 92, 231, 0.2));
+}
+
+.about-section .container,
+.effects-section .container,
+.statistics-section .container,
+.resources-section .container {
+    /* Added .resources-section .container */
+    margin-top: 100px;
+}
+
+.about-section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Video and Image Container */
+.video-container {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.image-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color:black;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    max-width: 800px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+}
+
+/* Footer Styles */
+footer {
+    background: radial-gradient(circle at 80% 50%, #1b2735, #090a0f);
+    color: var(--twilightBlue);
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer h3 {
+    color: var(--white);
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 15px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.social-icons a:hover {
+    opacity: 1;
+}
+
+.social-icons img {
+    width: 30px;
+    height: auto;
+}
+
+/* Hover Effects */
+.container h2:hover {
+    text-shadow: 0px 0px 15px var(--twilightBlue);
+    /* Glow effect on hover */
+    transform: scale(1.05);
+    /* Slight scale up on hover */
+    transition: all 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+.social-icons a:hover img {
+    filter: brightness(1.5);
+    /* Brighten icons on hover */
+    transform: translateY(-3px);
+    /* Slight lift on hover */
+    transition: all 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 36px;
+    }
+
+    .hero-text h2 {
+        font-size: 18px;
+    }
+
+    .image-container img {
+        width: 100%;
+    }
+
+    footer .container {
+        flex-direction: column;
+        /* Stack footer elements vertically */
+        align-items: flex-start;
+        /* Align items to the left */
+    }
+
+    .social-icons {
+        margin-top: 20px;
+        /* Add more space above social icons */
+    }
+}

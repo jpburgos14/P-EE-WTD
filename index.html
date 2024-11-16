@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxy Impact - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="Galaxy Impact Logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="about.html">About Light Pollution</a></li>
+                    <li><a href="effects.html">Effects</a></li>
+                    <li><a href="statistics.html">Statistics</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="wtd.html">What to do?</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="fullContainer hero-section" id="homeSection">
+        <div class="container hero-text">
+            <h1>Discovering Light Pollution</h1>
+            <h2><a href="#" onclick="openModal('lightPollutionModal')"><span>What is Light Pollution?</span></a></h2>
+        </div>
+    </div>
+
+    <div id="lightPollutionModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal('lightPollutionModal')">×</span>
+            <h2>What is Light Pollution?</h2>
+            <p>Light pollution refers to excessive artificial lighting that diminishes the visibility of stars and celestial bodies, disrupting ecosystems and human circadian rhythms. It's a growing problem in our modern world, with various sources contributing to the issue.</p>
+            <p>There are several types of light pollution, including:</p>
+            <ul>
+                <li><strong>Skyglow:</strong> The brightening of the night sky over populated areas, making it difficult to see stars.</li>
+                <li><strong>Glare:</strong> Excessive brightness that causes visual discomfort and can impair vision.</li>
+                <li><strong>Light Trespass:</strong> Unwanted or intrusive light spilling into unwanted areas, such as neighboring properties.</li>
+                <li><strong>Clutter:</strong> Bright, confusing, and excessive groupings of light sources, often found in urban areas.</li>
+            </ul>
+            <p>The main sources of light pollution include:</p>
+            <ul>
+                <li><strong>Urban areas:</strong> Streetlights, buildings, and advertising contribute significantly to light pollution.</li>
+                <li><strong>Industrial facilities:</strong> Factories and other industrial sites often have bright lights that illuminate the night sky.</li>
+                <li><strong>Outdoor lighting:</strong> Poorly designed or excessive outdoor lighting in residential areas also plays a role.</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>Contact Information</h3>
+                <p>Email: lr.jpburgos@mmdc.mcl.edu.ph</p>
+                
+                <div class="social-icons">
+                    <a href="#" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png" alt="Facebook"></a>
+                    <a href="#" target="_blank"><img src="https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg?w=740&t=st=1728244093~exp=1728244693~hmac=62d5637ef09e7207a8a737db66d60c6b6040204978d335b98bf948816247b348" alt="Twitter"></a>
+                    <a href="#" target="_blank"><img src="https://img.freepik.com/free-vector/instagram-icon_1057-2227.jpg?w=740&t=st=1728244155~exp=1728244755~hmac=f96b5d255bb742af51a97a83dee969cdc9e1f74ab1098c4fafbae0bf3d7ad624" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
